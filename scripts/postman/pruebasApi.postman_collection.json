@@ -1,0 +1,403 @@
+{
+	"info": {
+		"_postman_id": "1ba1f413-fd8a-480b-adcd-6516ff838b8d",
+		"name": "BancoPichincha",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Persona",
+			"item": [
+				{
+					"name": "CreaPersona",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Stefany Armijos\",\r\n  \"identificacion\": \"1365214879\",\r\n  \"genero\": \"F\",\r\n  \"edad\": 29,\r\n  \"direccion\": \"La Luz\",\r\n  \"telefono\": \"023651028\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5029/personas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5029",
+							"path": [
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActualizaPersona",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"idPersona\": 2,\r\n  \"nombre\": \"Isabel Armijos\",\r\n  \"identificacion\": \"1230125489\",\r\n  \"genero\": \"F\",\r\n  \"edad\": 22,\r\n  \"direccion\": \"El Incas\",\r\n  \"telefono\": \"0985214632\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5029/personas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5029",
+							"path": [
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminaPersona",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"idPersona\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5029/personas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5029",
+							"path": [
+								"personas"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cliente",
+			"item": [
+				{
+					"name": "CreaCliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"idPersona\": 2,\r\n  \"contrasena\": \"Isabelita\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5029/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5029",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActualizaCliente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"idCliente\": 2,\r\n  \"contrasena\": \"Sofy\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5029/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5029",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminaCliente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"idCliente\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5029/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5029",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cuenta",
+			"item": [
+				{
+					"name": "NuevaCuenta",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"32165165\",\r\n  \"tipoCuenta\": \"AHO\",\r\n  \"saldoInicial\": 98,\r\n  \"cliente\": {\r\n    \"idCliente\": 2,\r\n    \"claveCliente\": \"6321\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5029/cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5029",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActualizaCuenta",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"idCuenta\": 5,\r\n  \"numeroCuenta\": \"3216516599\",\r\n  \"tipoCuenta\": \"CAN\",\r\n  \"saldoInicial\": 1000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5029/cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5029",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminaCuenta",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"idCuenta\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5029/cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5029",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movimiento",
+			"item": [
+				{
+					"name": "ActualizaMovimiento",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"idMovimiento\": 7,\r\n  \"idCuenta\": 5,\r\n  \"fechaMovimiento\": \"2022-06-25T15:29:20.433Z\",\r\n  \"tipoMovimiento\": \"CRED\",\r\n  \"valorMovimiento\": 962\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5029/movimientos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5029",
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearMovimiento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"idCuenta\": 5,\r\n  \"fechaMovimiento\": \"2022-06-25T18:51:16.433Z\",\r\n  \"tipoMovimiento\": \"DEB\",\r\n  \"valorMovimiento\": -10000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5029/movimientos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5029",
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminaMovimiento",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"idMovimiento\": 7,\r\n  \"idCuenta\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5029/movimientos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5029",
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EstadoCuenta",
+			"item": [
+				{
+					"name": "PorIdFechas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7029/estado-cuenta?IdCliente=2&FechaInicio=2022-06-23&FechaFin=2022-06-26",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7029",
+							"path": [
+								"estado-cuenta"
+							],
+							"query": [
+								{
+									"key": "IdCliente",
+									"value": "2"
+								},
+								{
+									"key": "FechaInicio",
+									"value": "2022-06-23"
+								},
+								{
+									"key": "FechaFin",
+									"value": "2022-06-26"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

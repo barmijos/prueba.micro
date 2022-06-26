@@ -19,8 +19,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cliente.persistencia", "src
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cliente.comun", "src\cliente.comun\cliente.comun.csproj", "{B630580F-4C13-45B4-A9C0-93521AB03014}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{73F53BD6-50F3-4062-9BC9-A26391F02643}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,10 +45,6 @@ Global
 		{B630580F-4C13-45B4-A9C0-93521AB03014}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B630580F-4C13-45B4-A9C0-93521AB03014}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B630580F-4C13-45B4-A9C0-93521AB03014}.Release|Any CPU.Build.0 = Release|Any CPU
-		{73F53BD6-50F3-4062-9BC9-A26391F02643}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{73F53BD6-50F3-4062-9BC9-A26391F02643}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{73F53BD6-50F3-4062-9BC9-A26391F02643}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{73F53BD6-50F3-4062-9BC9-A26391F02643}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,7 +55,6 @@ Global
 		{4055F235-932D-4E6D-B184-DEC1D33624A2} = {358176C3-7BC8-4B92-85AC-4F826058F328}
 		{A96656D3-AA36-458E-9587-50462A3B1021} = {C0325DC0-6C8C-4D3D-A481-CDFA9CDDF991}
 		{B630580F-4C13-45B4-A9C0-93521AB03014} = {C0325DC0-6C8C-4D3D-A481-CDFA9CDDF991}
-		{73F53BD6-50F3-4062-9BC9-A26391F02643} = {C0325DC0-6C8C-4D3D-A481-CDFA9CDDF991}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {808933DF-B55E-4AF1-924A-DA4270274F1F}
