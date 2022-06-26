@@ -5,7 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace cliente.api.Controllers.v1
 {
-    [Route("/movimientos/")]
+    [ApiVersion("1.0")]
+    [Route("[area]/movimientos/")]
     public class MovimientoController : BaseApiController
     {
         [HttpPost]

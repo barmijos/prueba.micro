@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace cliente.api.Controllers
 {
     [ApiController]
-    [Route("api/v{version:apiVersion}/[controller]")]
+    [Area("api/v{version:apiVersion}")]
     public abstract class BaseApiController : ControllerBase
     {
         private IMediator meddiator;

@@ -12,10 +12,17 @@
 					"name": "CreaPersona",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "x-version",
+								"value": "1.0",
+								"type": "text",
+								"disabled": true
+							}
+						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"nombre\": \"Stefany Armijos\",\r\n  \"identificacion\": \"1365214879\",\r\n  \"genero\": \"F\",\r\n  \"edad\": 29,\r\n  \"direccion\": \"La Luz\",\r\n  \"telefono\": \"023651028\"\r\n}",
+							"raw": "{\r\n  \"nombre\": \"Lucia Giron\",\r\n  \"identificacion\": \"1320215454\",\r\n  \"genero\": \"F\",\r\n  \"edad\": 49,\r\n  \"direccion\": \"Riobamba\",\r\n  \"telefono\": \"023651028\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -23,12 +30,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5029/personas",
-							"protocol": "http",
+							"raw": "{{direccionbase}}/personas",
 							"host": [
-								"localhost"
+								"{{direccionbase}}"
 							],
-							"port": "5029",
 							"path": [
 								"personas"
 							]
@@ -43,7 +48,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"idPersona\": 2,\r\n  \"nombre\": \"Isabel Armijos\",\r\n  \"identificacion\": \"1230125489\",\r\n  \"genero\": \"F\",\r\n  \"edad\": 22,\r\n  \"direccion\": \"El Incas\",\r\n  \"telefono\": \"0985214632\"\r\n}",
+							"raw": "{\r\n  \"idPersona\": 3,\r\n  \"nombre\": \"Angel Quinzo\",\r\n  \"identificacion\": \"1320215454\",\r\n  \"genero\": \"M\",\r\n  \"edad\": 49,\r\n  \"direccion\": \"Riobamba\",\r\n  \"telefono\": \"023651028\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -51,12 +56,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5029/personas",
-							"protocol": "http",
+							"raw": "{{direccionbase}}/personas",
 							"host": [
-								"localhost"
+								"{{direccionbase}}"
 							],
-							"port": "5029",
 							"path": [
 								"personas"
 							]
@@ -79,12 +82,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5029/personas",
-							"protocol": "http",
+							"raw": "{{direccionbase}}/personas",
 							"host": [
-								"localhost"
+								"{{direccionbase}}"
 							],
-							"port": "5029",
 							"path": [
 								"personas"
 							]
@@ -104,7 +105,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"idPersona\": 2,\r\n  \"contrasena\": \"Isabelita\"\r\n}",
+							"raw": "{\r\n  \"idPersona\": 3,\r\n  \"contrasena\": \"Steve\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -112,12 +113,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5029/clientes",
-							"protocol": "http",
+							"raw": "{{direccionbase}}/clientes",
 							"host": [
-								"localhost"
+								"{{direccionbase}}"
 							],
-							"port": "5029",
 							"path": [
 								"clientes"
 							]
@@ -132,7 +131,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"idCliente\": 2,\r\n  \"contrasena\": \"Sofy\"\r\n}",
+							"raw": "{\r\n  \"idCliente\": 3,\r\n  \"contrasena\": \"Angie\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -140,12 +139,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5029/clientes",
-							"protocol": "http",
+							"raw": "{{direccionbase}}/clientes",
 							"host": [
-								"localhost"
+								"{{direccionbase}}"
 							],
-							"port": "5029",
 							"path": [
 								"clientes"
 							]
@@ -168,12 +165,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5029/clientes",
-							"protocol": "http",
+							"raw": "{{direccionbase}}/clientes",
 							"host": [
-								"localhost"
+								"{{direccionbase}}"
 							],
-							"port": "5029",
 							"path": [
 								"clientes"
 							]
@@ -193,7 +188,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"numeroCuenta\": \"32165165\",\r\n  \"tipoCuenta\": \"AHO\",\r\n  \"saldoInicial\": 98,\r\n  \"cliente\": {\r\n    \"idCliente\": 2,\r\n    \"claveCliente\": \"6321\"\r\n  }\r\n}",
+							"raw": "{\r\n  \"numeroCuenta\": \"113255489\",\r\n  \"tipoCuenta\": \"COR\",\r\n  \"saldoInicial\": 75,\r\n  \"cliente\": {\r\n    \"idCliente\": 1,\r\n    \"claveCliente\": \"4444\"\r\n  }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -201,12 +196,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5029/cuentas",
-							"protocol": "http",
+							"raw": "{{direccionbase}}/cuentas",
 							"host": [
-								"localhost"
+								"{{direccionbase}}"
 							],
-							"port": "5029",
 							"path": [
 								"cuentas"
 							]
@@ -221,7 +214,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"idCuenta\": 5,\r\n  \"numeroCuenta\": \"3216516599\",\r\n  \"tipoCuenta\": \"CAN\",\r\n  \"saldoInicial\": 1000\r\n}",
+							"raw": "{\r\n  \"idCuenta\": 4,\r\n  \"numeroCuenta\": \"11546332\",\r\n  \"tipoCuenta\": \"AHO\",\r\n  \"saldoInicial\": 51\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -229,13 +222,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5029/cuentas",
+							"raw": "http://localhost:5029/api/v1/cuentas",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "5029",
 							"path": [
+								"api",
+								"v1",
 								"cuentas"
 							]
 						}
@@ -290,12 +285,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5029/movimientos",
-							"protocol": "http",
+							"raw": "{{direccionbase}}/movimientos",
 							"host": [
-								"localhost"
+								"{{direccionbase}}"
 							],
-							"port": "5029",
 							"path": [
 								"movimientos"
 							]
@@ -310,7 +303,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"idCuenta\": 5,\r\n  \"fechaMovimiento\": \"2022-06-25T18:51:16.433Z\",\r\n  \"tipoMovimiento\": \"DEB\",\r\n  \"valorMovimiento\": -10000\r\n}",
+							"raw": "{\r\n  \"idCuenta\": 2,\r\n  \"fechaMovimiento\": \"2022-06-26T14:52:19.433Z\",\r\n  \"tipoMovimiento\": \"DEB\",\r\n  \"valorMovimiento\": -50\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -318,12 +311,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5029/movimientos",
-							"protocol": "http",
+							"raw": "{{direccionbase}}/movimientos",
 							"host": [
-								"localhost"
+								"{{direccionbase}}"
 							],
-							"port": "5029",
 							"path": [
 								"movimientos"
 							]
@@ -346,12 +337,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5029/movimientos",
-							"protocol": "http",
+							"raw": "{{direccionbase}}/movimientos",
 							"host": [
-								"localhost"
+								"{{direccionbase}}"
 							],
-							"port": "5029",
 							"path": [
 								"movimientos"
 							]
@@ -370,13 +359,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:7029/estado-cuenta?IdCliente=2&FechaInicio=2022-06-23&FechaFin=2022-06-26",
-							"protocol": "https",
+							"raw": "{{direccionbase}}/reportes/estado-cuenta?IdCliente=2&FechaInicio=2022-06-23&FechaFin=2022-06-26",
 							"host": [
-								"localhost"
+								"{{direccionbase}}"
 							],
-							"port": "7029",
 							"path": [
+								"reportes",
 								"estado-cuenta"
 							],
 							"query": [
@@ -398,6 +386,12 @@
 					"response": []
 				}
 			]
+		}
+	],
+	"variable": [
+		{
+			"key": "direccionbase",
+			"value": "http://localhost:5029/api/v1"
 		}
 	]
 }
