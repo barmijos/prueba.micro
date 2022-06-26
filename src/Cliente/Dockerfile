@@ -7,14 +7,14 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["Cliente/Cliente.csproj", "Cliente/"]
-RUN dotnet restore "Cliente/Cliente.csproj"
+COPY ["Cliente/cliente.api.csproj", "Cliente/"]
+RUN dotnet restore "Cliente/cliente.api.csproj"
 COPY . .
 WORKDIR "/src/Cliente"
-RUN dotnet build "Cliente.csproj" -c Release -o /app/build
+RUN dotnet build "cliente.api.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "Cliente.csproj" -c Release -o /app/publish
+RUN dotnet publish "cliente.api.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
