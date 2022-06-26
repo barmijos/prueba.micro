@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cliente.api", "Cliente\cliente.api.csproj", "{506902D4-F156-4871-B242-FF4368CBB5AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cliente.api", "src\Cliente\cliente.api.csproj", "{506902D4-F156-4871-B242-FF4368CBB5AD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{4E156DC9-95EB-4EE5-8D27-7B5576E93E03}"
 EndProject
@@ -11,13 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{358176C3-7
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infraestructura", "infraestructura", "{C0325DC0-6C8C-4D3D-A481-CDFA9CDDF991}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cliente.aplicacion", "cliente.aplicacion\cliente.aplicacion.csproj", "{A9285FA2-5BFD-497F-9D3B-011F897E014C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cliente.aplicacion", "src\cliente.aplicacion\cliente.aplicacion.csproj", "{A9285FA2-5BFD-497F-9D3B-011F897E014C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cliente.dominio", "cliente.dominio\cliente.dominio.csproj", "{4055F235-932D-4E6D-B184-DEC1D33624A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cliente.dominio", "src\cliente.dominio\cliente.dominio.csproj", "{4055F235-932D-4E6D-B184-DEC1D33624A2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cliente.persistencia", "cliente.persistencia\cliente.persistencia.csproj", "{A96656D3-AA36-458E-9587-50462A3B1021}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cliente.persistencia", "src\cliente.persistencia\cliente.persistencia.csproj", "{A96656D3-AA36-458E-9587-50462A3B1021}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cliente.comun", "cliente.comun\cliente.comun.csproj", "{B630580F-4C13-45B4-A9C0-93521AB03014}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cliente.comun", "src\cliente.comun\cliente.comun.csproj", "{B630580F-4C13-45B4-A9C0-93521AB03014}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{73F53BD6-50F3-4062-9BC9-A26391F02643}"
 EndProject
