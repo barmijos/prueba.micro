@@ -7,7 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace cliente.api.Controllers.v1
 {
-    [Route("/personas/")]
+    [ApiVersion("1.0")]
+    [Route("[area]/personas/")]
     public class PersonaController : BaseApiController
     {
         [HttpPost]

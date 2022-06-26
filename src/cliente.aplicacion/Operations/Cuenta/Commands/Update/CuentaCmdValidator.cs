@@ -8,8 +8,8 @@ namespace cliente.aplicacion.Operations.Cuenta.Commands.Update
 
         public enum TipoCuenta
         {
-            ANA,
-            CAN
+            AHO,
+            COR
         }
 
         public CuentaCmdValidator()

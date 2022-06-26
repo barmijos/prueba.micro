@@ -24,7 +24,7 @@ namespace cliente.aplicacion.Operations.Movimiento.Querys
     {
         public MovimientosCuenta(int idCuenta, DateTime fechaInicio, DateTime fechaFin)
         {
-            Query.Where(x=> x.IdCuenta== idCuenta && x.FechaMovimiento >=  fechaInicio && x.FechaMovimiento <= fechaFin);
+            Query.Where(x=> x.IdCuenta== idCuenta && x.FechaMovimiento >=  fechaInicio && x.FechaMovimiento < fechaFin.AddHours(23).AddMinutes(59).AddSeconds(59));
         }
     }
 }

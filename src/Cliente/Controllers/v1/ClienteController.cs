@@ -5,8 +5,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace cliente.api.Controllers.v1
 {
-    
-    [Route("/clientes/")]
+
+    [ApiVersion("1.0")]
+    [Route("[area]/clientes/")]
     public class ClienteController : BaseApiController
     {
         [HttpPost]

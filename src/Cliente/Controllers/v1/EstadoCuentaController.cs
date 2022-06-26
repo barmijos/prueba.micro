@@ -4,7 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace cliente.api.Controllers.v1
 {
-    [Route("/reportes")]
+    [ApiVersion("1.0")]
+   // [Route("[area]/reportes")]
     public class EstadoCuentaController : BaseApiController
     {
         private readonly IMontoMaximo montoMaximo;
@@ -15,7 +16,7 @@ namespace cliente.api.Controllers.v1
         }
 
         [HttpGet]
-        [Route("/estado-cuenta")]
+        [Route("[area]/reportes/estado-cuenta")]
         public async Task<IActionResult> ObtenerEstadoCuenta([FromQuery] GenerarEstadosCuentaParameters filters)
         {
             GenerarEstadoCuentaQuery cliente = new GenerarEstadoCuentaQuery()
