@@ -1,4 +1,5 @@
 # MovimientoCuentas
+
 ## Pre Requisitos
 ### Base de Datos
  - SQL Server 2017 minimo
@@ -15,17 +16,17 @@
 
 ## Configuracion de archivos
 ### ConnectionString
-- En ./src/Cliente/appsettings.json contiene la configuracion de acceso a la base de datos y se debe configurar segun la forma de ejecucion.
+- En **./src/Cliente/appsettings.json** contiene la configuracion de acceso a la base de datos y se debe configurar segun la forma de ejecucion.
 ### Postman
- - En ./scripts/postman/pruebasApi.postman_collection.json se encuentra el archivo de coleccion para realizar las pruebas sobre los endpoint
+ - En **./scripts/postman/pruebasApi.postman_collection.json** se encuentra el archivo de coleccion para realizar las pruebas sobre los endpoint
 
 
 ## Configuracion de BDD
 ### Ejecucion Scripts
 1. Los scripts por defecto estan con la bdd bdd_bpichincha1, se debe tomar en cuenta es al momento de configurar los connectioString de la App
 1. Ejecutar los scrips que estan en ./scripts/bdd en el orden que esta descrito en el nombre
-    - 1-basedatos.sql
-    - 2-indices
+    - **1-basedatos.sql**
+    - **2-indices**
 ### Autenticacion
 - Por defecto el archivo de connectioString esta configurado para usar Authn por SQL Server, si se desea Authn Integrada, se debe configurar.
 
@@ -38,7 +39,7 @@
 ### Consejos
 Para validar como esta corriendo la imagen podemos usar los siguientes comandos
 docker ps -a
-
+- docker exec -it webapi date para ver la hora que esta en el contendor
 - docker ps -a para ver el estado de los contenedores
 - docker rm webapi elimina el contenedor
 - docker rmi GUID  elimina una imagen
